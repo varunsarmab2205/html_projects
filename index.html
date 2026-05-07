@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP TECHNOLOGY CEOs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg: #0a0a0f;
+            --card: #16161f;
+            --surface: #111118;
+            --border: #2a2a3a;
+            --accent: #5b6ef5;
+            --accent2: #e05a7a;
+            --text: #e8e8f0;
+            --muted: #7a7a95;
+            --radius: 12px;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 300;
+            line-height: 1.7;
+            padding-bottom: 80px;
+        }
+
+        /* Hero Title */
+        body > h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3rem, 8vw, 7rem);
+            letter-spacing: 0.08em;
+            text-align: center;
+            padding: 80px 20px 20px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Nav links row */
+        body > h2:first-of-type {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 24px 20px 48px;
+            font-size: 1rem;
+        }
+
+        body > h2:first-of-type a {
+            color: var(--muted);
+            text-decoration: none;
+            padding: 8px 22px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            transition: color 0.2s, border-color 0.2s, background 0.2s;
+        }
+
+        body > h2:first-of-type a:hover {
+            color: var(--text);
+            border-color: var(--accent);
+            background: rgba(91,110,245,0.08);
+        }
+
+        /* Section headings */
+        h2[id] {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.2rem;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            text-align: center;
+            padding: 60px 20px 32px;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+
+        /* CEO name headings */
+        h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            letter-spacing: 0.08em;
+            color: var(--text);
+            max-width: 760px;
+            margin: 40px auto 0;
+            padding: 0 20px;
+        }
+
+        /* Bio paragraphs */
+        p {
+            max-width: 760px;
+            margin: 12px auto 0;
+            padding: 20px 24px;
+            color: #b0b0c8;
+            font-size: 1rem;
+            line-height: 1.8;
+            background: var(--card);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 var(--radius) var(--radius) 0;
+        }
+
+        /* Career Table */
+        table {
+            width: 90%;
+            max-width: 820px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border-radius: var(--radius);
+            overflow: hidden;
+            font-size: 0.95rem;
+            border: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--accent);
+            color: #fff;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            padding: 14px 18px;
+            text-align: left;
+        }
+
+        td {
+            padding: 14px 18px;
+            border-top: 1px solid var(--border);
+            color: var(--text);
+            background: var(--card);
+        }
+
+        tr:hover td { background: #1c1c28; }
+
+        /* Images */
+        img {
+            display: block;
+            margin: 16px auto 36px;
+            border-radius: var(--radius);
+            border: 2px solid var(--border);
+            object-fit: cover;
+            width: 300px;
+            height: 300px;
+            filter: grayscale(20%);
+            transition: filter 0.3s, transform 0.3s, border-color 0.3s;
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.03);
+            border-color: var(--accent);
+        }
+
+        /* Wikipedia links */
+        #wiki + br + a,
+        #wiki ~ a {
+            display: block;
+            text-align: center;
+            margin: 10px auto;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 1rem;
+            width: fit-content;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        #wiki ~ a:hover {
+            border-color: var(--accent);
+            color: var(--text);
+        }
+    </style>
+</head>
+<body>
+    <h1>TOP TECHNOLOGY CEOs</h1>
+    <h2>
+        <a href="#info">Information</a>
+        <a href="#career">Career</a>
+        <a href="#pics">Pictures</a>
+        <a href="#wiki">Wikipedia</a>
+    </h2>
+    <h2 id="info">Information</h2>
+    <h3>Elon Musk</h3>
+    <p>
+        Elon Musk is a businessman and innovator known for leading companies like Tesla and SpaceX.
+        He is famous for advancements in electric vehicles, reusable rockets, and artificial intelligence.
+        Musk has become one of the most influential technology leaders in the world.
+    </p>
+    <h3>Sundar Pichai</h3>
+    <p>
+        Sundar Pichai is the CEO of Google and Alphabet. Born in India, he played a major role in the
+        development of Google Chrome and Android. He is admired for his calm leadership and innovation.
+    </p>
+    <h3>Satya Nadella</h3>
+    <p>
+        Satya Nadella is the CEO of Microsoft. He transformed Microsoft by focusing on cloud computing,
+        artificial intelligence, and collaboration technologies. Under his leadership, Microsoft became
+        one of the world's most valuable companies.
+    </p>
+    <h3>Mark Zuckerberg</h3>
+    <p>
+        Mark Zuckerberg is the co-founder and CEO of Meta Platforms, formerly Facebook.
+        He created Facebook while studying at Harvard University and helped revolutionize social media
+        and virtual reality technologies.
+    </p>
+    <h2 id="career">Career</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Country</th>
+            <th>Industry</th>
+        </tr>
+        <tr>
+            <td>Elon Musk</td>
+            <td>Tesla</td>
+            <td>CEO</td>
+            <td>USA</td>
+            <td>Automobile & Space</td>
+        </tr>
+        <tr>
+            <td>Sundar Pichai</td>
+            <td>Google</td>
+            <td>CEO</td>
+            <td>USA</td>
+            <td>Technology</td>
+        </tr>
+        <tr>
+            <td>Satya Nadella</td>
+            <td>Microsoft</td>
+            <td>CEO</td>
+            <td>USA</td>
+            <td>Software & Cloud</td>
+        </tr>
+        <tr>
+            <td>Mark Zuckerberg</td>
+            <td>Meta</td>
+            <td>CEO</td>
+            <td>USA</td>
+            <td>Social Media</td>
+        </tr>
+    </table>
+    <h2 id="pics">Pictures</h2>
+    <h3>Elon Musk</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Elon_Musk_Royal_Society.jpg" alt="Elon Musk">
+    <h3>Sundar Pichai</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Sundar_pichai.png" alt="Sundar Pichai">
+    <h3>Satya Nadella</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Satya_Nadella_2017.jpg" alt="Satya Nadella">
+    <h3>Mark Zuckerberg</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" alt="Mark Zuckerberg">
+    <h2 id="wiki">Wikipedia</h2>
+    <a href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">Elon Musk</a>
+    <a href="https://en.wikipedia.org/wiki/Sundar_Pichai" target="_blank">Sundar Pichai</a>
+    <a href="https://en.wikipedia.org/wiki/Satya_Nadella" target="_blank">Satya Nadella</a>
+    <a href="https://en.wikipedia.org/wiki/Mark_Zuckerberg" target="_blank">Mark Zuckerberg</a>
+</body>
+</html>
